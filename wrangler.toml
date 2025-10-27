@@ -1,0 +1,14 @@
+name = "tier43-data-proxy"
+main = "worker.js"
+compatibility_date = "2024-11-01"
+
+# Wenn du erstmal workers.dev nutzt, reicht das.
+# Später kannst du optional eine eigene Route auf deine Domain legen:
+# routes = [{ pattern = "data.yourdomain.com/*", zone_name = "yourdomain.com" }]
+
+[observability]
+enabled = true
+
+[vars]
+# Timeout für Upstream-Requests (ms)
+UPSTREAM_TIMEOUT_MS = "12000"

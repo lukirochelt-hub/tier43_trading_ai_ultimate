@@ -1,0 +1,24 @@
+﻿# venv / Python cache
+.venv/
+__pycache__/
+*.pyc
+
+# IDE
+.vscode/
+.idea/
+
+# data & outputs
+data/
+models/
+outbox/
+reports/
+paperloop/
+tools/
+dashboard/
+docker/
+
+# misc
+*.log
+*.csv
+*.parquet
+*.feather

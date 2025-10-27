@@ -1,0 +1,24 @@
+[mypy]
+python_version = 3.11
+ignore_missing_imports = True
+warn_unused_ignores = True
+warn_redundant_casts = True
+warn_return_any = True
+no_implicit_optional = True
+strict_equality = True
+disallow_untyped_defs = True
+disallow_incomplete_defs = True
+check_untyped_defs = True
+
+# safer variant (Editor & mypy beide happy)
+follow_imports = "normal"
+
+# Für namespace packages
+namespace_packages = True
+mypy_path = "."
+
+# Regex lieber in Anführungszeichen
+exclude = "^(data/|dashboards?/|notebooks?/|logs/|models/|docker/|outbox/|results?/|reports?/|__pycache__/|\.mypy_cache/|\.ruff_cache/|\.pytest_cache/|\.venv/)"
+
+# Punkt in Anführungszeichen → Editor akzeptiert’s
+files = "."
